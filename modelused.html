@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Example</title>
+</head>
+  <body>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="content">
+              <p class="heading">Python</p>
+              <p class="para">
+                Python programming language (latest Python 3) is being used in web development, and Machine Learning applications, along with all cutting-edge technology in Software Industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="content">
+              <p class="heading">Machine Learning</p>
+              <p class="para">
+                Machine learning (ML) is a branch of artificial intelligence (AI) and computer science that focuses on the using data and algorithms to enable AI to imitate the way that humans learn, gradually improving its accuracy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="content">
+              <p class="heading">Django</p>
+              <p class="para">
+                This module shows you why Django is one of the most popular web server frameworks, how to set up a development environment, and how to start using it to create your own web applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .row { display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+.column { flex-basis: calc(33.333% - 20px); margin-bottom: 20px; }
+
+.card { width: 200%; max-width: 300px; position: relative; display: flex; align-items: center; justify-content: center; width: 320px; padding: 36px; border-radius: 24px; overflow: hidden; line-height: 1.6; background-color: rgb(141, 1, 248); transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.card::before, .card::after { content: ""; position: absolute; background-color: rgb(141, 1, 248); }
+
+.card::before { right: -5.2rem; top: -5.2rem; width: 10.4rem; height: 10.4rem; border-radius: 50%; opacity: 0; transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.card::after { left: -5.2rem; bottom: -5.2rem; width: 10.4rem; height: 10.4rem; border-radius: 50%; opacity: 0; transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.card:hover::before, .card:hover::after { scale: 7; opacity: 1; }
+
+.card:hover .content .heading { color: #ffffff; }
+
+.card:hover .content .para { color: #ffffff; }
+
+.card:hover { box-shadow: 0rem 6px 13px rgba(0, 0, 0, 0.1), 0rem 24px 24px rgba(0, 0, 0, 0.09), 0rem 55px 33px rgba(0, 0, 0, 0.05), 0rem 97px 39px rgba(0, 0, 0, 0.01), 0rem 152px 43px rgba(0, 0, 0, 0); background-color: rgb(141, 1, 248); scale: 1.05; }
+
+      </style>
+
+</body>
+</html>
